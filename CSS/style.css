@@ -80,7 +80,7 @@ body{
 		padding-bottom:10px;
 	}
 /*Mon CV*/
-	section{
+	.moncv{
 		width:70vw;
 		padding-left:5vw;
 		padding-right:5vw;
@@ -172,7 +172,7 @@ body{
 			padding-right:2.5vw;
 			padding-bottom:5px;
 		}
-		section{
+		.moncv{
 			width:100vw;
 			background-color:white;
 			padding-bottom: 50px;

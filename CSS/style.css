@@ -12,8 +12,8 @@ body{
 .vo{
 	display:flex; /*Pour mettre Mes Renseignements généraux et MON CV sur la même ligne*/
 }
-/*Renseignements généraux (aside)*/
-	aside{
+/*Renseignements généraux (nav)*/
+	nav{
 		padding-top:2%;
 		padding-bottom:2%;
 		width:20vw;
@@ -33,7 +33,7 @@ body{
 		font-size:12px;
 		font-style:italic;
 	}
-	aside .soustitre{
+	nav .soustitre{
 		background-color:#404040;
 		color:#feca07;
 		letter-spacing:1px;
@@ -42,32 +42,32 @@ body{
 		margin-top:35px;
 		font-size:20px;
 	}
-	aside ul{
+	nav ul{
 		text-align:left;
 		display:block;
 	}
-	aside li{
+	nav li{
 		list-style-type:none;
 		margin-top:15px;
 	}
-	aside a{
+	nav a{
 		color:black;
 		text-decoration:none;
 	}
-	aside a:hover{
+	nav a:hover{
 		color:blue;
 		font-weight:bold;
 	}
-	aside p{
+	nav p{
 		text-align:justify;
 		padding:0px 10px;
 	}
-	aside .icone{
+	nav .icone{
 		display:flex;
 		margin-top:25px;
 		justify-content: space-around;
 	}
-	aside i{ 
+	nav i{ 
 		padding:5px 5px;
 		border-radius:50%;
 		border:1px solid black;
@@ -177,7 +177,7 @@ body{
 			background-color:white;
 			padding-bottom: 50px;
 		}
-		aside,.presentation{
+		nav,.presentation{
 			display:none;
 		}
 		.fonction{

@@ -12,8 +12,8 @@ body{
 .vo{
 	display:flex; /*Pour mettre Mes Renseignements généraux et MON CV sur la même ligne*/
 }
-/*Renseignements généraux (nav)*/
-	nav{
+/*Renseignements généraux (.informations_globales)*/
+	.informations_globales{
 		padding-top:2%;
 		padding-bottom:2%;
 		width:20vw;
@@ -33,7 +33,7 @@ body{
 		font-size:12px;
 		font-style:italic;
 	}
-	nav .soustitre{
+	.informations_globales .soustitre{
 		background-color:#404040;
 		color:#feca07;
 		letter-spacing:1px;
@@ -42,32 +42,32 @@ body{
 		margin-top:35px;
 		font-size:20px;
 	}
-	nav ul{
+	.informations_globales ul{
 		text-align:left;
 		display:block;
 	}
-	nav li{
+	.informations_globales li{
 		list-style-type:none;
 		margin-top:15px;
 	}
-	nav a{
+	.informations_globales a{
 		color:black;
 		text-decoration:none;
 	}
-	nav a:hover{
+	.informations_globales a:hover{
 		color:blue;
 		font-weight:bold;
 	}
-	nav p{
+	.informations_globales p{
 		text-align:justify;
 		padding:0px 10px;
 	}
-	nav .icone{
+	.informations_globales .icone{
 		display:flex;
 		margin-top:25px;
 		justify-content: space-around;
 	}
-	nav i{ 
+	.informations_globales i{ 
 		padding:5px 5px;
 		border-radius:50%;
 		border:1px solid black;
@@ -140,7 +140,7 @@ body{
 		width: 18%;
 		margin-left:2%;
 	}
-	.annee_et_lieu, .titre_parcours div{
+	.annee_et_lieu, .titre_parcours .nom_parcours{
 		font-weight:600;
 	}
 	.titre_parcours {
@@ -153,7 +153,7 @@ body{
 		text-align:justify;
 	}
 /* Invisble sur grand écran*/
-	.footervm,.photodeprofil,header{
+	.footervm,.photodeprofil,.entete{
 		display:none;
 	}
 /*Media Queries*/
@@ -162,10 +162,10 @@ body{
 			margin:0 0px;
 			background-color:#feca07;
 		}
-		.vo,header{
+		.vo,.entete{
 			display:block;
 		}
-		header{
+		.entete{
 			background-color:#feca07;
 			width:100vw;
 			padding-left:2.5vw;
@@ -177,7 +177,7 @@ body{
 			background-color:white;
 			padding-bottom: 50px;
 		}
-		nav,.vouniquement{
+		.informations_globales,.vouniquement{
 			display:none;
 		}
 		.fonction{

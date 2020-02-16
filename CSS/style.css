@@ -1,0 +1,236 @@
+/*
+	.Mes Renseignements généraux représente la partie gauche composé de mes contacts, mon profil
+	.Mon Cv proprement dit constitué de la description de mes aptitudes (partie droite)
+
+*/
+body{
+	margin:0vw;
+	margin-left:2.5vw;
+	word-wrap: break-word;
+	position:relative;
+}
+.vo{
+	display:flex; /*Pour mettre Mes Renseignements généraux et MON CV sur la même ligne*/
+}
+/*Renseignements généraux (aside)*/
+	aside{
+		padding-top:2%;
+		padding-bottom:2%;
+		width:20vw;
+		text-align:center;
+		background-color:#feca07;
+	}
+	.monprofil{
+		display:inline-block;
+		height:100px;
+		width:100px;
+		border-radius:50%;
+		background-image:url("../Images/fleury.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	.identite_complete{
+		font-size:12px;
+		font-style:italic;
+	}
+	aside .soustitre{
+		background-color:#404040;
+		color:#feca07;
+		letter-spacing:1px;
+		padding-top:7px;
+		padding-bottom:5px;
+		margin-top:35px;
+		font-size:20px;
+	}
+	aside ul{
+		text-align:left;
+		display:block;
+	}
+	aside li{
+		list-style-type:none;
+		margin-top:15px;
+	}
+	aside a{
+		color:black;
+		text-decoration:none;
+	}
+	aside a:hover{
+		color:blue;
+		font-weight:bold;
+	}
+	aside p{
+		text-align:justify;
+		padding:0px 10px;
+	}
+	aside .icone{
+		display:flex;
+		margin-top:25px;
+		justify-content: space-around;
+	}
+	aside i{ 
+		padding:5px 5px;
+		border-radius:50%;
+		border:1px solid black;
+		margin-bottom:5px;
+	}
+	.mesloisirs{
+		position:absolute;
+		width:20%;
+		bottom:0;
+		padding-bottom:10px;
+	}
+/*Mon CV*/
+	section{
+		width:70vw;
+		padding-left:5vw;
+		padding-right:5vw;
+	}
+	h1{
+		margin-top:55px;
+		margin-bottom:7px;
+	}
+	h1 .prenom{
+		color:#feca07;
+	}
+	.titre span{
+		display:inline-block;
+		padding-bottom:1px;
+		border-bottom:1px solid #feca07;
+	}
+	.parcours span,.recommandation span{
+		display:inline-block;
+		font-size:20px;
+		font-weight:bold;
+		margin-top:70px;
+		margin-left:25px;
+	}
+	.recommandation i{
+		color: #feca07;
+	}
+	.parcours i{
+		transform:rotateY(-180deg) rotateX(0deg); 
+		color: #feca07;
+		font-size:20px;
+		height:0px;
+	}
+	hr{
+	    height: 2px;
+	    background-color: #feca07;
+	    border: none;
+	}
+	table{
+		text-align:left;
+	}
+	tr i{
+		color: #feca07;
+	}
+	.info_parcours {
+		display:flex;
+		margin-top:40px;
+	}
+	.info_parcours i{
+		color: #feca07;
+	}
+	.ico_parcours{
+		width:2%;
+	}
+	.annee_et_lieu{
+		width: 18%;
+		margin-left:2%;
+	}
+	.annee_et_lieu, .titre_parcours div{
+		font-weight:600;
+	}
+	.titre_parcours {
+		width:80%;
+	}
+	.titre_parcours div{
+		margin-bottom:10px;
+	}
+	.titre_parcours p{
+		text-align:justify;
+	}
+/* Invisble sur grand écran*/
+	footer,.photodeprofil,header{
+		display:none;
+	}
+/*Media Queries*/
+	@media screen and  (max-width:1024px){
+		body{
+			margin:0 0px;
+			background-color:#feca07;
+		}
+		.vo,header{
+			display:block;
+		}
+		header{
+			background-color:#feca07;
+			width:100vw;
+			padding-left:2.5vw;
+			padding-right:2.5vw;
+			padding-bottom:5px;
+		}
+		section{
+			width:100vw;
+			background-color:white;
+			padding-bottom: 50px;
+		}
+		aside,.presentation{
+			display:none;
+		}
+		.fonction{
+			vertical-align:top;
+		}
+		h1 {
+			font-size:20px;
+		}
+		.annee_et_lieu{
+			width: 23%;
+			margin-left:4%;
+		}
+		.titre_parcours {
+			width:60%;
+			margin-right:2%;
+		}
+		.parcours span{
+			font-size:18px;
+			margin-left:5px;
+		}
+		footer{
+			display:block;
+			padding:15px 20px;
+		}
+		.renseignements{
+			display:flex;
+			justify-content:space-around;
+		}
+		.mescontacts div{
+			display:inline-block;
+			margin-top:20px;
+		}
+		.imageprofil{
+			align-self:center;
+		}
+		.competences{
+			margin-left:20px;
+		}
+		.competences ul{
+			margin-top:1px;
+		}
+		footer i{
+			margin-right:5px;
+			color:#404040;
+		}
+		footer a:visited{
+			color:#feca07;
+		}
+		.passion{
+			text-align:center;
+			padding-top:20px;
+			padding-bottom:20px;
+			margin-top:25px;
+		}
+		.passion i {
+			margin-right:10px;
+		}
+	}

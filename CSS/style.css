@@ -153,7 +153,7 @@ body{
 		text-align:justify;
 	}
 /* Invisble sur grand écran*/
-	footer,.photodeprofil,header{
+	.footervm,.photodeprofil,header{
 		display:none;
 	}
 /*Media Queries*/
@@ -198,7 +198,7 @@ body{
 			font-size:18px;
 			margin-left:5px;
 		}
-		footer{
+		.footervm{
 			display:block;
 			padding:15px 20px;
 		}
@@ -219,11 +219,11 @@ body{
 		.competences ul{
 			margin-top:1px;
 		}
-		footer i{
+		.footervm i{
 			margin-right:5px;
 			color:#404040;
 		}
-		footer a:visited{
+		.footervm a:visited{
 			color:#feca07;
 		}
 		.passion{

@@ -1,27 +1,30 @@
-/*
-	.Mes Renseignements généraux représente la partie gauche composé de mes contacts, mon profil
-	.Mon Cv proprement dit constitué de la description de mes aptitudes (partie droite)
-
-*/
-body{
-	margin:0vw;
-	margin-left:2.5vw;
-	word-wrap: break-word;
-	position:relative;
-}
-.vo{
-	display:flex; /*Pour mettre Mes Renseignements généraux et MON CV sur la même ligne*/
-}
-/*Renseignements généraux (.informations_globales)*/
-	.informations_globales{
-		padding-top:2%;
-		padding-bottom:2%;
-		width:20vw;
-		text-align:center;
-		background-color:#feca07;
+/* -------------------------- */
+/*==      CODES COULEURS     */
+/* --------------------------*/
+	/*
+	Teinte de jaune		#feca07
+	Gris charbon       #404040
+	*/
+/* -------------------------- */
+/*==    ELEMETNS PRINCIPAUX    */
+/* --------------------------*/
+	body{
+		margin: 0 0px;
+		word-wrap: break-word;
+		position:relative;
 	}
-	.monprofil{
+/* -------------------------- */
+/*==         HEADER           */
+/* --------------------------*/
+	.entete{
+		background-color:#feca07;
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.imagedeprofil{
 		display:inline-block;
+		margin-right: 10px;
 		height:100px;
 		width:100px;
 		border-radius:50%;
@@ -33,206 +36,204 @@ body{
 		font-size:12px;
 		font-style:italic;
 	}
-	.informations_globales .soustitre{
-		background-color:#404040;
-		color:#feca07;
-		letter-spacing:1px;
-		padding-top:7px;
-		padding-bottom:5px;
-		margin-top:35px;
+	h1 {
 		font-size:20px;
 	}
-	.informations_globales ul{
-		text-align:left;
-		display:block;
-	}
-	.informations_globales li{
-		list-style-type:none;
-		margin-top:15px;
-	}
-	.informations_globales a{
-		color:black;
-		text-decoration:none;
-	}
-	.informations_globales a:hover{
-		color:blue;
-		font-weight:bold;
-	}
-	.informations_globales p{
-		text-align:justify;
-		padding:0px 10px;
-	}
-	.informations_globales .icone{
-		display:flex;
-		margin-top:25px;
-		justify-content: space-around;
-	}
-	.informations_globales i{ 
-		padding:5px 5px;
-		border-radius:50%;
-		border:1px solid black;
-		margin-bottom:5px;
-	}
-	.mesloisirs{
-		position:absolute;
-		width:20%;
-		bottom:0;
-		padding-bottom:10px;
-	}
-/*Mon CV*/
-	.moncv{
-		width:70vw;
-		padding-left:5vw;
-		padding-right:5vw;
-	}
-	.nomprenom{
+/* -------------------------- */
+/*==         SECTION         */
+/* --------------------------*/
+	/*Mon CV*/
+		.moncv{
+			padding-left:5vw;
+			padding-right:5vw;
+		}
+		.nomprenom{
 		margin-top:55px;
 		margin-bottom:7px;
 		font-size:24px;
 		font-weight:700;
-	}
-	.nomprenom .prenom{
-		color:#feca07;
-	}
-	.titre span{
-		display:inline-block;
-		padding-bottom:1px;
-		border-bottom:1px solid #feca07;
-	}
-	.parcours span,.recommandation span{
-		display:inline-block;
-		font-size:20px;
-		font-weight:bold;
-		margin-top:70px;
-		margin-left:25px;
-	}
-	.recommandation i{
-		color: #feca07;
-	}
-	.parcours i{
-		transform:rotateY(-180deg) rotateX(0deg); 
-		color: #feca07;
-		font-size:20px;
-		height:0px;
-	}
-	hr{
-	    height: 2px;
-	    background-color: #feca07;
-	    border: none;
-	}
-	table{
-		text-align:left;
-	}
-	tr i{
-		color: #feca07;
-	}
-	.info_parcours {
-		display:flex;
-		margin-top:40px;
-	}
-	.info_parcours i{
-		color: #feca07;
-	}
-	.ico_parcours{
-		width:2%;
-	}
-	.annee_et_lieu{
-		width: 18%;
-		margin-left:2%;
-	}
-	.annee_et_lieu, .titre_parcours .nom_parcours{
-		font-weight:600;
-	}
-	.titre_parcours {
-		width:80%;
-	}
-	.titre_parcours div{
-		margin-bottom:10px;
-	}
-	.titre_parcours p{
-		text-align:justify;
-	}
-/* Invisble sur grand écran*/
-	.footervm,.photodeprofil,.entete{
-		display:none;
-	}
-/*Media Queries*/
-	@media screen and  (max-width:1024px){
-		body{
-			margin:0 0px;
-			background-color:#feca07;
 		}
-		.vo,.entete{
-			display:block;
+		.nomprenom .prenom{
+			color:#feca07;
 		}
-		.entete{
-			background-color:#feca07;
-			width:100vw;
-			padding-left:2.5vw;
-			padding-right:2.5vw;
-			padding-bottom:5px;
+		.titre span{
+			display:inline-block;
+			padding-bottom:1px;
+			border-bottom:1px solid #feca07;
 		}
-		.moncv{
-			width:100vw;
-			background-color:white;
-			padding-bottom: 50px;
+		.parcours{
+			display: flex;
+			justify-content: flex-start;
 		}
-		.informations_globales,.vouniquement{
-			display:none;
+		.parcours div{
+			font-size:20px;
+			font-weight:bold;
+			margin-top:70px;
+			margin-left:25px;
+			text-align: left;
 		}
-		.fonction{
-			vertical-align:top;
-		}
-		h1 {
+		.parcours i{
+			transform:rotateY(-180deg) rotateX(0deg); 
+			color: #feca07;
 			font-size:20px;
 		}
+		hr{
+		    height: 2px;
+		    background-color: #feca07;
+		    border: none;
+		}
+		.info_parcours {
+			display:flex;
+			margin-top:40px;
+		}
+		.info_parcours i{
+			color: #feca07;
+		}
+		.ico_parcours{
+			width: 50px;
+		}
 		.annee_et_lieu{
-			width: 23%;
-			margin-left:4%;
+			font-weight:600;
+			width: 100px;
 		}
-		.titre_parcours {
-			width:60%;
-			margin-right:2%;
+		.contenu_parcours{
+			width: 70%;
+			padding-left: 1vw;/**/
 		}
-		.parcours span{
-			font-size:18px;
-			margin-left:5px;
+		.contenu_parcours div{
+			margin-bottom:10px;
 		}
-		.footervm{
-			display:block;
-			padding:15px 20px;
+		.contenu_parcours p{
+			text-align:justify;
 		}
-		.renseignements{
+/* -------------------------- */
+/*==         FOOTER           */
+/* --------------------------*/
+	.footervm{
+		padding:15px 20px;
+		background-color:#feca07;
+	}
+	.footervm i{
+		margin-right:5px;
+		color:#404040;
+	}
+	.footervm a:visited{
+		color:#feca07;
+	}
+	/*Contact*/
+		.contactezmoi{
 			display:flex;
 			justify-content:space-around;
 		}
 		.mescontacts div{
 			display:inline-block;
-			margin-top:20px;
-		}
-		.imageprofil{
-			align-self:center;
-		}
-		.competences{
-			margin-left:20px;
+			margin-top:10px;
 		}
 		.competences ul{
 			margin-top:1px;
 		}
-		.footervm i{
-			margin-right:5px;
-			color:#404040;
-		}
-		.footervm a:visited{
-			color:#feca07;
-		}
+	/* Distractions */
 		.passion{
 			text-align:center;
 			padding-top:20px;
 			padding-bottom:20px;
 			margin-top:25px;
+			display: flex;
+			justify-content: space-around;
 		}
-		.passion i {
-			margin-right:10px;
+		.passion i{
+			margin-left:10px;
+		}	
+/* -------------------------- */
+/*==      MEDIAS QUERIES      */
+/* --------------------------*/
+	@media screen and  (max-width:1024px){
+		.informations_globales,.vouniquement{
+			display:none;
 		}
+	}
+	@media screen and  (min-width:1024px){
+		/* -------------------------- */
+		/*==    ELEMETNS PRINCIPAUX    */
+		/* --------------------------*/
+			body{
+				display: flex;
+				justify-content:center;
+			}
+		/* -------------------------- */
+		/*==         HEADER           */
+		/* --------------------------*/
+			.entete{
+				display: none;
+			}
+		/* -------------------------- */
+		/*==           NAV            */
+		/* --------------------------*/
+			.informations_globales{
+				padding-top:2%;
+				padding-bottom:2%;
+				width:20%;
+				text-align:center;
+				background-color:#feca07;
+			}
+			.informations_globales .soustitre{
+				background-color:#404040;
+				color:#feca07;
+				letter-spacing:1px;
+				padding-top:7px;
+				padding-bottom:5px;
+				margin-top:35px;
+				font-size:20px;
+			}
+			.informations_globales .listedescontacts{
+				text-align:left;
+				display:block;
+			}
+			.informations_globales .listedescontacts li{
+				list-style-type:none;
+				margin-top:15px;
+			}
+			.informations_globales .listedescontacts a{
+				color:black;
+				text-decoration:none;
+			}
+			.informations_globales .listedescontacts a:hover{
+				color:blue;
+				font-weight:bold;
+			}
+			.informations_globales .aproposdemoi {
+				text-align:justify;
+				padding:0px 10px;
+			}
+			.mesloisirs{
+				position:absolute;
+				width:20%;
+				bottom:0;				
+				padding-bottom:10px;
+			}
+			.informations_globales .mesloisirs .icone{
+				display:flex;
+				margin-top:25px;
+				justify-content: space-around;
+			}
+			.informations_globales .mesloisirs i{ 
+				padding:5px 5px;
+				border-radius:50%;
+				border:1px solid black;
+				margin-bottom:5px;
+			}
+		/* -------------------------- */
+		/*==         SECTION         */
+		/* --------------------------*/
+			/*Mon CV*/
+				.moncv{
+					width: 65%;
+					padding-left:5%;
+				}
+		/* -------------------------- */
+		/*==         FOOTER           */
+		/* --------------------------*/
+			.footervm{
+				display: none;
+			}
 	}

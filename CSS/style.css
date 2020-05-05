@@ -67,7 +67,7 @@
 			display: flex;
 			justify-content: flex-start;
 		}
-		.parcours div{
+		.parcours div,.parcours h3{
 			font-size:20px;
 			font-weight:bold;
 			margin-top:70px;
@@ -83,6 +83,7 @@
 		    height: 2px;
 		    background-color: #feca07;
 		    border: none;
+		    margin-top: -5px;
 		}
 		.info_parcours {
 			display:flex;
